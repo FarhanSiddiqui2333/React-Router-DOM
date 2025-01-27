@@ -7,10 +7,12 @@ import { Route, Routes } from 'react-router-dom'
 import NavBar from './NavBar/NavBar'
 
 function App() {
-
+  
   return (
     <>
+      
       <NavBar />
+      
       <Routes>
         <Route index element={<Home />}/>
         <Route path='/about' element={<About />}/>
@@ -18,11 +20,13 @@ function App() {
         <Route path='/service' element={<Services />}/>
         <Route path='/help' element={<Help />}/>
       </Routes>
+      
     </>
   )
 }
 
 function Home(){
+  
   return(
     <>
       <h1>
